@@ -1,18 +1,27 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BaseInventoryItem : MonoBehaviour
+public class BaseInventoryItem
 {
-    // Start is called before the first frame update
-    void Start()
+    private int itemTypeID;
+    private string itemName;
+    private string itemDescription;
+
+    public int ItemTypeID { get => itemTypeID;  }
+    public string ItemDescription { get => itemDescription;  }
+    public string ItemName { get => itemName;  }
+
+    public BaseInventoryItem(int ItemID)
     {
-        
+        throw new NotImplementedException();
     }
 
-    // Update is called once per frame
-    void Update()
+    public BaseInventoryItem(int ItemID, string ItemName, string ItemDescription)
     {
-        
+        this.itemTypeID = ItemID;
+        this.itemName = ItemName;
+        this.itemDescription = ItemDescription;
     }
 }

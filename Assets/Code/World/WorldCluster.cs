@@ -4,15 +4,7 @@ using UnityEngine;
 
 public class WorldCluster : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform[] AnchoredChild { get => anchoredChild; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    private Transform[] anchoredChild;
 }
