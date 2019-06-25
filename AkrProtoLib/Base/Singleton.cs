@@ -1,18 +1,19 @@
-﻿public sealed class Singleton
+﻿namespace AkrProtoLib
 {
-    private static readonly Singleton instance = new Singleton();
-
-    // Explicit static constructor to tell C# compiler
-    // not to mark type as beforefieldinit
-    static Singleton() { }
-
-    private Singleton() { }
-
-    public static Singleton Instance
+    public class Singleton
     {
-        get
+        private static readonly Singleton instance = new Singleton();
+
+        // Explicit static constructor to tell C# compiler
+        // not to mark type as beforefieldinit
+        private Singleton() { }
+
+        public static Singleton Instance
         {
-            return instance;
+            get
+            {
+                return instance;
+            }
         }
     }
 }
