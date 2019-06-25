@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message BinMessage {
+  string command = 1;
+  repeated string arguments = 2;
+}

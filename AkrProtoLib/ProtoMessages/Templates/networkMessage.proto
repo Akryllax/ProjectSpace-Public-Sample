@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+enum MessageType {
+	UNKNOWN = 0;
+	BIN 	= 1;
+	ECHO 	= 2;
+	CMD 	= 3;
+}
+
+message NetworkMessage {
+	MessageType messageType = 1;
+	int32 protoVersion = 2;
+	bytes payload = 3;
+}

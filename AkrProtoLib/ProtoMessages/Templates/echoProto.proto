@@ -1,0 +1,5 @@
+syntax = "proto3";
+
+message EchoPacket {
+  string data = 1;
+}

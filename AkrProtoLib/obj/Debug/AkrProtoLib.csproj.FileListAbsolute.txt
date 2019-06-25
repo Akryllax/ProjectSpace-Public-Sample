@@ -1,0 +1,14 @@
+C:\Users\alexander\Project Space\Assets\Plugins\AkrProtoLib.dll
+C:\Users\alexander\Project Space\Assets\Plugins\AkrProtoLib.pdb
+C:\Users\alexander\AkrProtoLib\obj\Debug\AkrProtoLib.csproj.CoreCompileInputs.cache
+C:\Users\alexander\AkrProtoLib\obj\Debug\AkrProtoLib.dll
+C:\Users\alexander\AkrProtoLib\obj\Debug\AkrProtoLib.pdb
+C:\Users\alexander\AkrProtoLib\obj\Debug\AkrProtoLib.csprojAssemblyReference.cache
+C:\Users\alexander\AkrProtoLib\obj\Debug\AkrProtoLib.csproj.CopyComplete
+C:\Users\alexander\Project Space\AkrProtoLib\obj\Debug\AkrProtoLib.csprojAssemblyReference.cache
+C:\Users\alexander\Project Space\AkrProtoLib\obj\Debug\AkrProtoLib.csproj.CoreCompileInputs.cache
+C:\Users\alexander\Project Space\AkrProtoLib\obj\Debug\AkrProtoLib.dll
+C:\Users\alexander\Project Space\AkrProtoLib\obj\Debug\AkrProtoLib.pdb
+C:\Users\alexander\Project Space\Project Space\Assets\Plugins\AkrProtoLib.dll
+C:\Users\alexander\Project Space\Project Space\Assets\Plugins\AkrProtoLib.pdb
+C:\Users\alexander\Project Space\AkrProtoLib\obj\Debug\AkrProtoLib.csproj.CopyComplete
