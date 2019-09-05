@@ -1,0 +1,17 @@
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\NetSim_Player.deps.json
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\NetSim_Player.runtimeconfig.json
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\NetSim_Player.runtimeconfig.dev.json
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\NetSim_Player.dll
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\NetSim_Player.pdb
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\AkrProtoLib.dll
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\Google.Protobuf.dll
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\AkrProtoLib.pdb
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\Google.Protobuf.pdb
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\bin\Debug\netcoreapp2.1\Google.Protobuf.xml
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.csprojAssemblyReference.cache
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.csproj.CoreCompileInputs.cache
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.AssemblyInfoInputs.cache
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.AssemblyInfo.cs
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.csproj.CopyComplete
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.dll
+C:\Users\alexander\Project Space\NetSim_Player\NetSim_Player\obj\Debug\netcoreapp2.1\NetSim_Player.pdb

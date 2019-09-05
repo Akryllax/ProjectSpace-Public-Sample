@@ -2,6 +2,4 @@
 <ProgramPath ID="100">
   <VisitorInstance ID="10" DefaultReturn="AOK" ErrorReturn="ERR"/>
   <VisitorInstance ID="11" DefaultReturn="AOK" ErrorReturn="ERR"/>
-  <VisitorInstance ID="12" DefaultReturn="AOK" ErrorReturn="ERR"/>
-  <VisitorInstance ID="999" DefaultReturn="AOK" ErrorReturn="ERR"/>
 </ProgramPath>

@@ -11,7 +11,6 @@ namespace AkrProtoLib
     public class CoreStatus
     {
         public BaseVisitor[] allVisitors;
-        protected NullVisitor nullVisitor = new NullVisitor();
 
         private static readonly CoreStatus instance = new CoreStatus();
 
@@ -45,7 +44,7 @@ namespace AkrProtoLib
                 return ref allVisitors[index];
             } else
             {
-                return ref allVisitors[0];
+                return ref GetVisitor(-99);
             }
         }
     }

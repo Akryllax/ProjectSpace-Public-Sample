@@ -18,11 +18,22 @@ namespace AkrProtoLib.Base
 
         public int ProgramPathID = -1;
 
-        protected ArrayList programItems = new ArrayList();
+        protected List<BaseVisitor> programItems = new List<BaseVisitor>();
 
         public void AddVisitorInstance(BaseVisitor visitor)
         {
-            this.programItems.Add(programItems);
+            this.programItems.Add(visitor);
+        }
+
+        public void ProcessTransaction(ref BaseTransaction baseTransaction)
+        {
+            foreach (BaseVisitor vi in programItems)
+            {
+                if(vi.CanExecute(ref baseTransaction))
+                { 
+                    vi.VisitTransaction(ref baseTransaction);
+                }
+            }
         }
 
         public static void Initialize()
@@ -30,7 +41,7 @@ namespace AkrProtoLib.Base
             XmlDocument xmldoc = new XmlDocument();
             XmlNodeList xmlPPList;
 
-            FileStream fs = new FileStream("Config/ProgramPaths.xml", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream("C:/Users/alexander/Project Space/AkrProtoLib/Config/ProgramPaths.xml", FileMode.Open, FileAccess.Read);
             xmldoc.Load(fs);
             xmlPPList = xmldoc.GetElementsByTagName("ProgramPath");
 
@@ -53,6 +64,8 @@ namespace AkrProtoLib.Base
                         VisitorID = visitorID,
                         VisitorInstance = CoreStatus.Instance.GetVisitor(visitorID)
                     };
+
+                    programPathDescriptor.AddVisitorInstance(visitorInstance.VisitorInstance);
                 }
 
                 programPaths.Add(programPathDescriptor.ProgramPathID, programPathDescriptor);

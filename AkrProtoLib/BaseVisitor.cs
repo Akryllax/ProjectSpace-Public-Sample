@@ -7,7 +7,12 @@ namespace NetworkCore
 {
     public abstract class BaseVisitor
     {
-        public int VisitorID = -1;
+        public virtual int VisitorID { get { return -1; } }
+
+        public virtual bool CanExecute(ref BaseTransaction transaction)
+        {
+            return true;
+        }
 
         public abstract void VisitTransaction(ref BaseTransaction transaction);
     }

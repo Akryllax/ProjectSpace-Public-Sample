@@ -1,4 +1,5 @@
-﻿using NetworkCore;
+﻿using AkrProtoLib.Base;
+using NetworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,11 +10,11 @@ namespace AkrProtoLib.Visitors
 {
     public class TestVisitor1 : BaseVisitor
     {
-        public new int VisitorID = 10;
+        public override int VisitorID { get { return 10; } }
 
         public override void VisitTransaction(ref BaseTransaction transaction)
         {
-            
+            transaction.AddComponent<Test1TransactionComponent>();
         }
     }
 }
