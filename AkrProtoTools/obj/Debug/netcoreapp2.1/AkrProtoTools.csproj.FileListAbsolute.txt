@@ -1,0 +1,17 @@
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoTools.deps.json
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoTools.runtimeconfig.json
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoTools.runtimeconfig.dev.json
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoTools.dll
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoTools.pdb
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.csproj.CoreCompileInputs.cache
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.AssemblyInfoInputs.cache
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.AssemblyInfo.cs
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.dll
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.pdb
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoLib.dll
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\Google.Protobuf.dll
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\AkrProtoLib.pdb
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\Google.Protobuf.pdb
+C:\Users\alexander\Project Space\AkrProtoTools\bin\Debug\netcoreapp2.1\Google.Protobuf.xml
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.csprojAssemblyReference.cache
+C:\Users\alexander\Project Space\AkrProtoTools\obj\Debug\netcoreapp2.1\AkrProtoTools.csproj.CopyComplete

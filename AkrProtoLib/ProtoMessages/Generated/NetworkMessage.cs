@@ -23,14 +23,14 @@ public static partial class NetworkMessageReflection {
     byte[] descriptorData = global::System.Convert.FromBase64String(
         string.Concat(
           "CixQcm90b01lc3NhZ2VzL1RlbXBsYXRlcy9uZXR3b3JrTWVzc2FnZS5wcm90",
-          "byJaCg5OZXR3b3JrTWVzc2FnZRIhCgttZXNzYWdlVHlwZRgBIAEoDjIMLk1l",
-          "c3NhZ2VUeXBlEhQKDHByb3RvVmVyc2lvbhgCIAEoBRIPCgdwYXlsb2FkGAMg",
-          "ASgMKjYKC01lc3NhZ2VUeXBlEgsKB1VOS05PV04QABIHCgNCSU4QARIICgRF",
-          "Q0hPEAISBwoDQ01EEANiBnByb3RvMw=="));
+          "byJtCg5OZXR3b3JrTWVzc2FnZRIhCgttZXNzYWdlVHlwZRgBIAEoDjIMLk1l",
+          "c3NhZ2VUeXBlEhQKDHByb3RvVmVyc2lvbhgCIAEoBRIRCgltc2dMZW5ndGgY",
+          "AyABKAUSDwoHcGF5bG9hZBgEIAEoDCo2CgtNZXNzYWdlVHlwZRILCgdVTktO",
+          "T1dOEAASBwoDQklOEAESCAoERUNITxACEgcKA0NNRBADYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MessageType), }, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::NetworkMessage), global::NetworkMessage.Parser, new[]{ "MessageType", "ProtoVersion", "Payload" }, null, null, null)
+        new pbr::GeneratedClrTypeInfo(new[] {typeof(global::MessageType), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(typeof(global::NetworkMessage), global::NetworkMessage.Parser, new[]{ "MessageType", "ProtoVersion", "MsgLength", "Payload" }, null, null, null, null)
         }));
   }
   #endregion
@@ -74,6 +74,7 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
   public NetworkMessage(NetworkMessage other) : this() {
     messageType_ = other.messageType_;
     protoVersion_ = other.protoVersion_;
+    msgLength_ = other.msgLength_;
     payload_ = other.payload_;
     _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
   }
@@ -85,7 +86,7 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
 
   /// <summary>Field number for the "messageType" field.</summary>
   public const int MessageTypeFieldNumber = 1;
-  private global::MessageType messageType_ = 0;
+  private global::MessageType messageType_ = global::MessageType.Unknown;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public global::MessageType MessageType {
     get { return messageType_; }
@@ -105,8 +106,19 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
     }
   }
 
+  /// <summary>Field number for the "msgLength" field.</summary>
+  public const int MsgLengthFieldNumber = 3;
+  private int msgLength_;
+  [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+  public int MsgLength {
+    get { return msgLength_; }
+    set {
+      msgLength_ = value;
+    }
+  }
+
   /// <summary>Field number for the "payload" field.</summary>
-  public const int PayloadFieldNumber = 3;
+  public const int PayloadFieldNumber = 4;
   private pb::ByteString payload_ = pb::ByteString.Empty;
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public pb::ByteString Payload {
@@ -131,6 +143,7 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
     }
     if (MessageType != other.MessageType) return false;
     if (ProtoVersion != other.ProtoVersion) return false;
+    if (MsgLength != other.MsgLength) return false;
     if (Payload != other.Payload) return false;
     return Equals(_unknownFields, other._unknownFields);
   }
@@ -138,8 +151,9 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public override int GetHashCode() {
     int hash = 1;
-    if (MessageType != 0) hash ^= MessageType.GetHashCode();
+    if (MessageType != global::MessageType.Unknown) hash ^= MessageType.GetHashCode();
     if (ProtoVersion != 0) hash ^= ProtoVersion.GetHashCode();
+    if (MsgLength != 0) hash ^= MsgLength.GetHashCode();
     if (Payload.Length != 0) hash ^= Payload.GetHashCode();
     if (_unknownFields != null) {
       hash ^= _unknownFields.GetHashCode();
@@ -154,7 +168,7 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
 
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public void WriteTo(pb::CodedOutputStream output) {
-    if (MessageType != 0) {
+    if (MessageType != global::MessageType.Unknown) {
       output.WriteRawTag(8);
       output.WriteEnum((int) MessageType);
     }
@@ -162,8 +176,12 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
       output.WriteRawTag(16);
       output.WriteInt32(ProtoVersion);
     }
+    if (MsgLength != 0) {
+      output.WriteRawTag(24);
+      output.WriteInt32(MsgLength);
+    }
     if (Payload.Length != 0) {
-      output.WriteRawTag(26);
+      output.WriteRawTag(34);
       output.WriteBytes(Payload);
     }
     if (_unknownFields != null) {
@@ -174,11 +192,14 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
   [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
   public int CalculateSize() {
     int size = 0;
-    if (MessageType != 0) {
+    if (MessageType != global::MessageType.Unknown) {
       size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) MessageType);
     }
     if (ProtoVersion != 0) {
       size += 1 + pb::CodedOutputStream.ComputeInt32Size(ProtoVersion);
+    }
+    if (MsgLength != 0) {
+      size += 1 + pb::CodedOutputStream.ComputeInt32Size(MsgLength);
     }
     if (Payload.Length != 0) {
       size += 1 + pb::CodedOutputStream.ComputeBytesSize(Payload);
@@ -194,11 +215,14 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
     if (other == null) {
       return;
     }
-    if (other.MessageType != 0) {
+    if (other.MessageType != global::MessageType.Unknown) {
       MessageType = other.MessageType;
     }
     if (other.ProtoVersion != 0) {
       ProtoVersion = other.ProtoVersion;
+    }
+    if (other.MsgLength != 0) {
+      MsgLength = other.MsgLength;
     }
     if (other.Payload.Length != 0) {
       Payload = other.Payload;
@@ -222,7 +246,11 @@ public sealed partial class NetworkMessage : pb::IMessage<NetworkMessage> {
           ProtoVersion = input.ReadInt32();
           break;
         }
-        case 26: {
+        case 24: {
+          MsgLength = input.ReadInt32();
+          break;
+        }
+        case 34: {
           Payload = input.ReadBytes();
           break;
         }

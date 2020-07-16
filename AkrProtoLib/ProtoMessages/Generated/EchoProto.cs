@@ -26,8 +26,8 @@ public static partial class EchoProtoReflection {
           "RWNob1BhY2tldBIMCgRkYXRhGAEgASgJYgZwcm90bzM="));
     descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
         new pbr::FileDescriptor[] { },
-        new pbr::GeneratedClrTypeInfo(null, new pbr::GeneratedClrTypeInfo[] {
-          new pbr::GeneratedClrTypeInfo(typeof(global::EchoPacket), global::EchoPacket.Parser, new[]{ "Data" }, null, null, null)
+        new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(typeof(global::EchoPacket), global::EchoPacket.Parser, new[]{ "Data" }, null, null, null, null)
         }));
   }
   #endregion

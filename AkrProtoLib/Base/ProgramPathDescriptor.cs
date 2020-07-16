@@ -41,7 +41,7 @@ namespace AkrProtoLib.Base
             XmlDocument xmldoc = new XmlDocument();
             XmlNodeList xmlPPList;
 
-            FileStream fs = new FileStream("C:/Users/alexander/Project Space/AkrProtoLib/Config/ProgramPaths.xml", FileMode.Open, FileAccess.Read);
+            FileStream fs = new FileStream("C:/Users/alexm/Documents/Project Space/AkrProtoLib/Config/ProgramPaths.xml", FileMode.Open, FileAccess.Read);
             xmldoc.Load(fs);
             xmlPPList = xmldoc.GetElementsByTagName("ProgramPath");
 

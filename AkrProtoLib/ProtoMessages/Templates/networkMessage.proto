@@ -10,5 +10,6 @@ enum MessageType {
 message NetworkMessage {
 	MessageType messageType = 1;
 	int32 protoVersion = 2;
-	bytes payload = 3;
+	int32 msgLength = 3;
+	bytes payload = 4;
 }

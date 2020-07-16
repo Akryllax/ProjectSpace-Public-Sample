@@ -1,34 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\alexander\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj": {}
+    "C:\\Users\\alexm\\Documents\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj": {}
   },
   "projects": {
-    "C:\\Users\\alexander\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj": {
+    "C:\\Users\\alexm\\Documents\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexander\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj",
+        "projectUniqueName": "C:\\Users\\alexm\\Documents\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj",
         "projectName": "AkrProtoLib",
-        "projectPath": "C:\\Users\\alexander\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj"
+        "projectPath": "C:\\Users\\alexm\\Documents\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj"
       },
       "frameworks": {
         "net45": {}
       }
     },
-    "C:\\Users\\alexander\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj": {
+    "C:\\Users\\alexm\\Documents\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\alexander\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj",
+        "projectUniqueName": "C:\\Users\\alexm\\Documents\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj",
         "projectName": "NetSim_Player",
-        "projectPath": "C:\\Users\\alexander\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj",
-        "packagesPath": "C:\\Users\\alexander\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\alexander\\Project Space\\NetSim_Player\\NetSim_Player\\obj\\",
+        "projectPath": "C:\\Users\\alexm\\Documents\\Project Space\\NetSim_Player\\NetSim_Player\\NetSim_Player.csproj",
+        "packagesPath": "C:\\Users\\alexm\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\alexm\\Documents\\Project Space\\NetSim_Player\\NetSim_Player\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\alexander\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\alexm\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -41,8 +38,8 @@
         "frameworks": {
           "netcoreapp2.1": {
             "projectReferences": {
-              "C:\\Users\\alexander\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj": {
-                "projectPath": "C:\\Users\\alexander\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj"
+              "C:\\Users\\alexm\\Documents\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj": {
+                "projectPath": "C:\\Users\\alexm\\Documents\\Project Space\\AkrProtoLib\\AkrProtoLib.csproj"
               }
             }
           }
@@ -57,16 +54,23 @@
         "netcoreapp2.1": {
           "dependencies": {
             "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
               "version": "[2.1.0, )",
               "autoReferenced": true
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
